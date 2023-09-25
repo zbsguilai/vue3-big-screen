@@ -1,5 +1,15 @@
 本项目来源于[《腾讯云 Cloud Studio 实战训练营》](https://marketing.csdn.net/p/06a21ca7f4a1843512fa8f8c40a16635)的参赛作品，该作品在腾讯云 [Cloud Studio](https://www.cloudstudio.net/?utm=csdn) 中运行无误。
 
+## 项目启动
+
+- 安装依赖
+`yarn`
+- 启动项目
+`yarn run serve`
+如果编译项目的时候提示没有 DataV 依赖，输入 `npm install @jiaminghi/data-view` 或者 `yarn add @jiaminghi/data-view` 进行手动安装。
+- 替换依赖文件
+`a_modules`解压并替换掉 node_modules 里面的同名文件
+
 ## 一、项目描述
 
 - 这里一个基于 Vue3、TypeScript、DataV、ECharts 框架的 " **数据大屏项目** "，使用 '.vue' 和 '.tsx' 文件实现界面，采用新版动态屏幕适配方案，支持数据动态刷新渲染、内部DataV、ECharts图表都支持自由替换。组件详情请点击下方 ECharts 和 DataV 文档。
@@ -35,16 +45,6 @@
 | src/ *.d.ts | 全局类型声明文件                                                     |
 
 ## 三、使用介绍
-
-### 启动项目
-
-需要提前安装好 `nodejs` 与 `yarn`,下载项目后在项目主目录下运行 `yarn` 拉取依赖包。安装完依赖包之后然后使用 `vue-cli` 或者直接使用命令`npm run serve`，就可以启动项目，启动项目后最好是手动全屏查看（按 F11）。如果编译项目的时候提示没有 DataV 框架的依赖，输入 `npm install @jiaminghi/data-view` 或者 `yarn add @jiaminghi/data-view` 进行手动安装。
-
-如果安装完依赖 @jiaminghi 报错 `<template v-for> key should be placed on the <template> tag` 类似的bug，我已经做了修复，大家把此工程目录下的 `other_modules/@jiaminghi.rar` 解压并替换掉 node_modules 里面的同名文件（或者手动修改，只需要把 v-for 移动到下方标签里，并删除 template 即可），我已经给作者提了 Issues 希望大家拉取的时候没有这个错误
-
-如果大家不想每次都修改依赖，可以使用社区封装的 vue3 版本的 DataV：
-1. https://gitee.com/kjgl77/datav-vue3
-2. https://gitee.com/wangbin3162/bin-datav?_from=gitee_search
 
 ### 封装组件渲染图表
 
